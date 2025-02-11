@@ -25,11 +25,11 @@ p {
     color: #4a3b3b;
 }
 
-img {
+.grid-item img {
     width: 100%; 
-    height: auto;
-    border-radius: 12px;
-    display: block; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 12px; 
 }
 
 header {
@@ -74,7 +74,7 @@ nav ul li a:hover {
     background-size: cover; 
     background-position: center; 
     height: 400px; 
-    max-height: 60vh; 
+    min-height: 60vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,4 +163,12 @@ footer {
     .grid-container {
         grid-template-columns: 1fr; 
     }
+}
+
+.section {
+        display: none;
+}
+
+.active {
+    display: block;
 }
