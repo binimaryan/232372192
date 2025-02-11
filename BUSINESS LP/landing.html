@@ -15,14 +15,14 @@
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About Us</a></li>
+            <li><a href="#" onclick="showSection('services')">Services</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero section active">
         <div class="hero-content">
             <h2>Welcome to Coquette Boutique</h2>
             <p>Your destination for chic and elegant fashion.</p>
@@ -31,7 +31,7 @@
     </section>
 
     <main>
-        <section id="about" class="grid-container">
+        <section id="about" class="grid-container section">
             <div class="grid-item">
                 <img src="https://i.pinimg.com/736x/2e/83/1b/2e831b64030ee75f72635b58a3b3009d.jpg" alt="Chic Dress">
                 <h2>About Our Boutique</h2>
@@ -64,7 +64,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>Contact Us</h2>
             <p>If you have any questions or inquiries, feel free to reach out!</p>
             <p>Email: coquetteboutique@yahoo.com</p>
@@ -77,3 +77,13 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
