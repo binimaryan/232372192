@@ -15,10 +15,10 @@
 
     <nav>
         <ul>
-            <li><a href="#" onclick="showSection('home')">Home</a></li>
-            <li><a href="#" onclick="showSection('about')">About Us</a></li>
-            <li><a href="#" onclick="showSection('services')">Services</a></li>
-            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -30,60 +30,10 @@
         </div>
     </section>
 
-    <main>
-        <section id="about" class="grid-container section">
-            <div class="grid-item">
-                <img src="image01.jpg" alt="Chic Dress">
-                <h2>About Our Boutique</h2>
-                <p>At Coquette Boutique, we offer a curated selection of stylish clothing and accessories that embody elegance and femininity.</p>
-            </div>
-            <div class="grid-item">
-                <img src="image02.jpg" alt="Variety of Chic Outfits">
-                <h2>Our Collections</h2>
-                <p>Explore our extensive range of dresses, tops, and accessories that cater to every occasion, from casual outings to formal events.</p>
-            </div>
-            <div class="grid-item">
-                <img src="https://i.pinimg.com/736x/1c/c2/c6/1cc2c69478d46058c1b85eda1e635fb0.jpg" alt="Features of Our Boutique">
-                <h2>Why Choose Us?</h2>
-                <p>Our pieces are designed with quality and style in mind, ensuring you look and feel your best. Learn more about our unique offerings.</p>
-            </div>
-        </section>
-
-        <section id="services" class="grid-container section">
-            <div class="grid-item">
-                <h2>Personal Styling</h2>
-                <p>Get personalized styling advice to find the perfect outfit for any occasion.</p>
-            </div>
-            <div class="grid-item">
-                <h2>Fashion Events</h2>
-                <p>Join us for exclusive fashion events and trunk shows to discover new trends.</p>
-            </div>
-            <div class="grid-item">
-                <h2>Online Shopping</h2>
-                <p>Shop our collections online with easy returns and fast shipping.</p>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or inquiries, feel free to reach out!</p>
-            <p>Email: coquetteboutique@yahoo.com</p>
-            <p>Phone: 09010203040</p>
-        </section>
-    </main>
-
     <footer>
         <p>&copy; 2025 Coquette Boutique</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-<script>
-    function showSection(sectionId) {
-        const sections = document.querySelectorAll('.section');
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-        document.getElementById(sectionId).classList.add('active');
-    }
-</script>

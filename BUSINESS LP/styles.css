@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('https://i.pinimg.com/736x/1c/1f/30/1c1f30bbb82be1556ef9eb72f4b49fc2.jpg');
+    background-image: url('image00.jpg');
     background-size: cover; 
     background-position: center; 
     height: 400px; 
@@ -144,31 +144,13 @@ footer {
     background-color: #ffe3e3;
     text-align: center;
     padding: 20px;
-    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
     color: #4a3b3b;
-    border-top: 2px solid #e3c5c5;
-}
-
-@media (max-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; 
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr; 
-    }
-}
-
-.section {
-        display: none;
-}
-
-.active {
-    display: block;
 }
